@@ -11,3 +11,7 @@ Classic algorithms and data structures concepts implemented in Go.
 
 * [Bubble Sort](https://github.com/maxcnunes/algorithms-data-structures/blob/master/algorithms/sorting/bubble) [(wiki)](http://en.wikipedia.org/wiki/Bubble_sort)
 * [Shell Sort](https://github.com/maxcnunes/algorithms-data-structures/blob/master/algorithms/sorting/shell) [(wiki)](http://en.wikipedia.org/wiki/Shellsort)
+
+#### Searching algorithms
+
+* [Sieve of Eratosthenes - Find prime numbers](https://github.com/maxcnunes/algorithms-data-structures/blob/master/algorithms/searching/sieve-of-eratosthenes) [(wiki)](https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes)
