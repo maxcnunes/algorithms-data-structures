@@ -9,4 +9,5 @@ Classic algorithms and data structures concepts implemented in Go.
 
 #### Sorting algorithms
 
-* [Bubble Sort](https://github.com/maxcnunes/algorithms-data-structures/blob/master/algorithms/sorting/bubble/bubble.go) [(wiki)](http://en.wikipedia.org/wiki/Bubble_sort)
+* [Bubble Sort](https://github.com/maxcnunes/algorithms-data-structures/blob/master/algorithms/sorting/bubble) [(wiki)](http://en.wikipedia.org/wiki/Bubble_sort)
+* [Shell Sort](https://github.com/maxcnunes/algorithms-data-structures/blob/master/algorithms/sorting/shell) [(wiki)](http://en.wikipedia.org/wiki/Shellsort)

@@ -1,5 +1,6 @@
 package bubble
 
+// Sort items with bubble sorting algorithm
 func Sort(items []int) {
 	numItems := len(items)
 
