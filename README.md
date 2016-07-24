@@ -7,6 +7,10 @@ Classic algorithms and data structures concepts implemented in Go.
 
 ### Contents
 
+#### Data Structures
+
+* [Linked List](https://github.com/maxcnunes/algorithms-data-structures/blob/master/data-structures/linked-list) - [(wiki)](https://en.wikipedia.org/wiki/Linked_list)
+
 #### Sorting algorithms
 
 * [Bubble Sort](https://github.com/maxcnunes/algorithms-data-structures/blob/master/algorithms/sorting/bubble) [(wiki)](http://en.wikipedia.org/wiki/Bubble_sort)
