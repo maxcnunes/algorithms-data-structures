@@ -1,5 +1,7 @@
 package linkedlist
 
+import "errors"
+
 // List is a data structure consisting of a group of nodes
 // which together represent a sequence
 type List struct {
@@ -57,4 +59,49 @@ func (l *List) Append(data interface{}) {
 	}
 
 	l.Size++
+}
+
+// Add a new element in a specific position
+func (l *List) Add(data interface{}, index int) error {
+	if index > l.Size {
+		return errors.New("Index out of range")
+	}
+
+	if index == 0 || l.Size == 0 {
+		l.Prepend(data)
+		return nil
+	}
+
+	if l.Size-1 == index {
+		l.Append(data)
+		return nil
+	}
+
+	newNode := NewNode(data)
+	nextNode, _ := l.Get(index)
+	prevNode := nextNode.Prev
+
+	prevNode.Next = newNode
+	newNode.Prev = prevNode
+
+	nextNode.Prev = newNode
+	newNode.Next = nextNode
+
+	l.Size++
+
+	return nil
+}
+
+// Get the element by index
+func (l *List) Get(index int) (*Node, error) {
+	if index > l.Size {
+		return nil, errors.New("Index out of range")
+	}
+
+	node := l.Head
+	for i := 0; i < index; i++ {
+		node = node.Next
+	}
+
+	return node, nil
 }
